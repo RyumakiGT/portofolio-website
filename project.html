@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fachri - Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Fachri</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>Kategori: Web Development</p>
+      <p>Deskripsi: Website responsive dengan fitur interaktif.</p>
+    </div>
+  </section>
+
+  <section class="upload-form">
+    <h2>Upload Project</h2>
+    <form>
+      <input type="text" placeholder="Nama Project" required><br>
+      <input type="text" placeholder="Kategori" required><br>
+      <textarea placeholder="Deskripsi"></textarea><br>
+      <input type="file" accept="image/*" required><br>
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

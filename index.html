@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fachri - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="three.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Fachri</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="hero">
+    <canvas id="three-canvas"></canvas>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my works and skills</p>
+  </section>
+
+  <section class="skills">
+    <h2>Bidang Keahlian</h2>
+    <div class="skill-list">
+      <div class="skill">Web Development</div>
+      <div class="skill">UI/UX Design</div>
+      <div class="skill">3D Modeling</div>
+      <div class="skill">Game Development</div>
+    </div>
+  </section>
+
+  <section class="comments">
+    <h2>Komentar</h2>
+    <form id="commentForm">
+      <input type="text" placeholder="Nama" required>
+      <textarea placeholder="Tulis komentar..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="commentList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

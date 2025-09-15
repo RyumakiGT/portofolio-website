@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fachri - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Fachri</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+      <a href="https://instagram.com" target="_blank">📸 Instagram</a>
+      <a href="https://github.com" target="_blank">💻 GitHub</a>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Nama" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

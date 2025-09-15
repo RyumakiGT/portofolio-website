@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #081b29;
+  color: white;
+  padding: 10px 20px;
+}
+nav {
+  display: flex;
+  gap: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+#three-canvas {
+  width: 100%;
+  height: 300px;
+}
+.skills, .comments, .projects, .upload-form, .contact {
+  padding: 20px;
+}
+.skill-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.skill {
+  background: #eee;
+  padding: 10px;
+  border-radius: 8px;
+}
+.project-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+form input, form textarea, form button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+.socials a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+  nav.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
